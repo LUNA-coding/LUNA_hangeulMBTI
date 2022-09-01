@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 56px 0;
+}
+
+.C {
+    text-align: center;
+    padding: 0 38px;
+}
+
+.header  > .title {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'SUIT-Medium';
+    margin-bottom: 10px;
+}
+
+.header > .m_title {
+    font-family: 'GangwonEdu_OTFBoldA';
+    margin-bottom: 34px;
+}
+
+.question {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.question > .numbering {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #483278;
+}
+
+.question > .content {
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 18px;
+}
+
+.img_test {
+    width: 310px;
+    height: 210px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.ch {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.ch > button {
+    width: 310px;
+    height: 60px;
+    background-color: #483278;
+    color: white;
+    font-family: 'GangwonEdu_OTFBoldA';
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 60px;
+    
+}
+
+.p_C {
+    margin-top: 60px;
+}
+
+.p_num {
+    font-family: 'SUIT-Medium';
+    font-size: 16px;
+    color: #d2cece;
+    text-align: right;
+    width: 264px;
+    margin: auto;
+}
+
+.page{
+    list-style: none;
+    display: flex;
+    color: #ededed;
+    padding: 0;
+    width: 278px;
+    margin: 4px auto;
+}
+
+.selected {
+    color: #483278;
+    font-size: 18;
+    font-weight: bold;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    
+}
+
+.unselected {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ededed;
+    margin: 0 7px;
+}
