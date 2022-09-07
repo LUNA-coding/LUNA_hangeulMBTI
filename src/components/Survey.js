@@ -1,7 +1,23 @@
 import Page from "./Page";
-import styles from './Survey.css'
+import styles from './Survey.css';
+import questions from '../common/Qlist/Qlist.json';
+import { useSearchParams } from "react-router-dom";
+import { useEffect } from "react";
 
 function Survey() {
+    
+    let [searchParams, setSearchParams] = useSearchParams();
+    const id = parseInt(searchParams.get('id'));
+    const option = searchParams.get('option');
+    
+
+    
+    const next = () => {
+        let temp = id + 1
+        setSearchParams({ id: temp, option: questions[temp].option })
+    }
+    
+    
     return (
         <div className="C">
             <div className="header">
@@ -9,18 +25,17 @@ function Survey() {
                 <div className="m_title">한글 엠비티아이</div>
             </div>
             <div className="question">
-                <div className="numbering">질문 1.</div>
+                <div className="numbering">질문 {questions[id].id + 1}.</div>
                 <div className="content">
-                    두근두근 첫 등교날! <br />
-                    처음보는 친구가 같이 학교를 가자고 한다면?
+                    {questions[id].question}
                 </div>
             </div>
             <div className="img">
                 <div className="img_test"></div>
             </div>
             <div className="ch">
-                <button>잘됐다! 같이가자!</button>
-                <button>조금 부담... 그래도 같이 가자</button>
+                <button onClick={next}>{questions[id].answers[0].content}</button>
+                <button onClick={next}>{questions[id].answers[1].content}</button>
             </div>
             <Page />
         </div>
