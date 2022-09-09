@@ -1,21 +1,29 @@
 import Page from "./Page";
 import styles from './Survey.css';
-import questions from '../common/Qlist/Qlist.json';
+import questions from '../common/Qlist.json';
 import { useSearchParams } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 
 function Survey() {
     
     let [searchParams, setSearchParams] = useSearchParams();
     const id = parseInt(searchParams.get('id'));
-    const option = searchParams.get('option');
+    const res = searchParams.get('res')
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        console.log(data)
+    }, [data])
     
+    const next = (e) => {
+        setData(data => {
+            data = [...data, e.target.value]
+            return data
+        } )
+        
+    }
 
     
-    const next = () => {
-        let temp = id + 1
-        setSearchParams({ id: temp, option: questions[temp].option })
-    }
     
     
     return (
@@ -34,8 +42,8 @@ function Survey() {
                 <div className="img_test"></div>
             </div>
             <div className="ch">
-                <button onClick={next}>{questions[id].answers[0].content}</button>
-                <button onClick={next}>{questions[id].answers[1].content}</button>
+                <button onClick={next} value={questions[id].answers[0].type}>{questions[id].answers[0].content}</button>
+                <button onClick={next} value={questions[id].answers[0].type}>{questions[id].answers[1].content}</button>
             </div>
             <Page />
         </div>

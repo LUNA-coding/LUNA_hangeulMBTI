@@ -9,7 +9,7 @@ function Start() {
                     placeholder="이름을 입력해주세요" 
                     required 
                 />
-                <Link to='/test?id=0&option=EI'>
+                <Link to='/test?id=0&res='>
                     <button className="startBtn" type="submit">테스트 시작하기~</button>
                 </Link>
             </form>
