@@ -1,26 +1,37 @@
 import Page from "./Page";
 import styles from './Survey.css';
 import questions from '../common/Qlist.json';
-import { useSearchParams } from "react-router-dom";
-import { useEffect,useState } from "react";
+import { useSearchParams, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function Survey() {
     
     let [searchParams, setSearchParams] = useSearchParams();
     const id = parseInt(searchParams.get('id'));
-    const res = searchParams.get('res')
-    const [data, setData] = useState([])
+    const res = searchParams.get('res');
+    const navigate = useNavigate();
 
     useEffect(() => {
-        console.log(data)
-    }, [data])
+        console.log(res);
+        if(res.length == 12){
+            navigate('/result', { 
+                state: { 
+                    result: res
+                } 
+            });
+        };
+    }, [res])
     
     const next = (e) => {
-        setData(data => {
-            data = [...data, e.target.value]
-            return data
-        } )
-        
+        let temp
+        if (id == 11){
+            temp = id
+            console.log('ogod')
+            setSearchParams({ id: temp, res: res + e.target.value })
+        }else{
+            temp = id + 1
+            setSearchParams({ id: temp, res: res + e.target.value })
+        }
     }
 
     
