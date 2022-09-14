@@ -19,9 +19,12 @@
     font-style: normal;
 }
 
-body{
+.Survey{
     margin: 0;
     padding: 56px 0;
+    background-color: white;
+    height: 90vh;
+    width: 100vw;
 }
 
 .C {

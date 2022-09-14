@@ -1,18 +1,43 @@
+import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 
 function Result() {
     const location = useLocation();
     const result = [...location.state.result];
     
-    let E, N, T, J = 0
+    let ee = 0, nn = 0, tt = 0, jj = 0;
 
+    let resTemp = '';
+
+    
     result.forEach((item) => {
-        console.log(item)
-    })
+        if (item === 'E'){
+            ee++;
+        }else if (item === 'N'){
+            nn++;
+        }else if (item === 'T'){
+            tt++;
+        }else if (item === 'J'){
+            jj++;
+        }
+    });
+
+    (ee >= 2) ? resTemp = 'E' : resTemp = 'I';
+    (nn >= 2) ? resTemp = resTemp + 'N' : resTemp = resTemp + 'S';
+    (tt >= 2) ? resTemp = resTemp + 'T' : resTemp = resTemp + 'F';
+    (jj >= 2) ? resTemp = resTemp + 'J' : resTemp = resTemp + 'P';
+    
+    const mbti = resTemp
+
+    console.log(mbti)
+        
+    
+
+    
 
     return (
         <div>
-            <div> {result} </div>
+            <div> 당신의 mbti는 {mbti}입니다. </div>
         </div>
     )
 }
