@@ -14,11 +14,12 @@
 
 body {
     margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .Start{
-    width: 100vw;
-    height: 100vh;
     background: linear-gradient(45deg, #483278 30%, #8061A8, #483278);
     color: white;
     padding: 242px 0;
@@ -33,6 +34,7 @@ body {
 .title {
     font-size: 35px;
     margin-bottom: 16px;
+    line-height: 50px;
 }
 
 .btnCont {
@@ -73,4 +75,5 @@ body {
     width: 100vw;
     position: absolute;
     bottom: 0;
+    
 }

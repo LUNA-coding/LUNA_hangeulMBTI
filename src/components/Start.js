@@ -1,6 +1,6 @@
 import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
 import styles from '../components/Start.css'
-import bg from '../img/lunabackground.png'
+import bg from '../img/stbg.png'
 
 
 function Start() {
