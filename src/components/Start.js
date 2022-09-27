@@ -12,10 +12,10 @@ function Start() {
         const counter = setInterval(() => {
             current += 3
             setCount(current)
-            if (current > 205) { // 나중에 실제 참여사용자 수로 대체
+            if (current > 54) { // 나중에 실제 참여사용자 수로 대체
                 clearInterval(counter);
             }
-        }, 30);
+        }, 50);
     }, [])
     
 
@@ -26,6 +26,8 @@ function Start() {
                     <div className='title'>나와 닮은 위인은 <br /> 누구일까? </div>
                     <div>한글편</div>
                 </div>
+
+                <div className='deco'></div>
                 
                 <div className='btnCont'>
                     <Link to='/test?id=0&res='>

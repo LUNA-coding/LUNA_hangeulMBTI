@@ -10,9 +10,10 @@ function Survey() {
     const id = parseInt(searchParams.get('id'));
     const res = searchParams.get('res');
     const navigate = useNavigate();
+    
 
     useEffect(() => {
-        console.log(res);
+
         if(res.length == 12){
             navigate('/result', { 
                 state: { 
@@ -23,17 +24,16 @@ function Survey() {
     }, [res])
     
     const next = (e) => {
+        
         let temp
         if (id == 11){
             temp = id
-            console.log('ogod')
             setSearchParams({ id: temp, res: res + e.target.value })
         }else{
             temp = id + 1
             setSearchParams({ id: temp, res: res + e.target.value })
         }
     }
-
     
     
     
@@ -47,13 +47,20 @@ function Survey() {
                 <div className='question'>
                     <div className='numbering'>질문 {questions[id].id + 1}.</div>
                     <div className='content'>
-                        {questions[id].question}
+                        {questions[id].question.split('\n').map((line) => {
+                            return (
+                                <span>
+                                    {line}
+                                    <br />
+                                </span>
+                            )
+                        })}
                     </div>
                 </div>
                 <div className="img_test"></div>
                 <div className='ch'>
                     <button onClick={next} value={questions[id].answers[0].type}>{questions[id].answers[0].content}</button>
-                    <button onClick={next} value={questions[id].answers[0].type}>{questions[id].answers[1].content}</button>
+                    <button onClick={next} value={questions[id].answers[1].type}>{questions[id].answers[1].content}</button>
                 </div>
                 <Page />
             </div>

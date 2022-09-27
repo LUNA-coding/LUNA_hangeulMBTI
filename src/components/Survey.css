@@ -60,6 +60,7 @@
 .question > .content {
     font-family: 'GangwonEdu_OTFBoldA';
     font-size: 18px;
+    white-space: pre-line;
 }
 
 .img_test {
@@ -90,6 +91,7 @@
 
 .p_C {
     margin-top: 60px;
+    width: 100%;
 }
 
 .p_num {
@@ -97,8 +99,9 @@
     font-size: 16px;
     color: #d2cece;
     text-align: right;
-    width: 264px;
-    margin: auto;
+    width: 285px;
+    margin: 0 auto 9px;
+    
 }
 
 .page{
@@ -110,11 +113,14 @@
     margin: 4px auto;
 }
 
+
+
 .selected {
     color: #483278;
     font-size: 18;
     font-weight: bold;
     font-family: 'GangwonEduPowerExtraBoldA';
+    margin: 0 5px;
     
 }
 
@@ -124,4 +130,7 @@
     border-radius: 50%;
     background-color: #ededed;
     margin: 0 7px;
+    color: rgba(255, 255, 255, 0);
 }
+
+
