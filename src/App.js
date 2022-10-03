@@ -5,6 +5,7 @@ import Start from "./components/Start";
 import Result from './components/Result';
 import ReactGA from "react-ga";
 
+
 function App() {
 
   useEffect(() => {
