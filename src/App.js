@@ -2,12 +2,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactGA from "react-ga";
 import Survey from "./components/Survey";
 import Start from "./components/Start";
-import Result from './components/Result'
-import RouteChangeTracker from "./components/RouteChangeTracker";
+import Result from './components/Result';
+import ReactGA from "react-ga";
 
 function App() {
 
-  RouteChangeTracker();
+  useEffect(() => {
+    ReactGA.initialize("UA-237880535-1");
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div>
