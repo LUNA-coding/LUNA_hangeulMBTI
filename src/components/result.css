@@ -1,0 +1,21 @@
+body {
+    overflow: scroll;
+}
+
+.result{
+    background: linear-gradient(45deg, #483278 30%, #8061A8, #483278);
+    color: white;
+    height: 230vh;
+    position: relative;
+}
+
+.cont {
+    width: 90%;
+    height: 200vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 10px;
+}

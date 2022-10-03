@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import styles from './result.css'
 
 function Result() {
     const location = useLocation();
@@ -36,8 +37,10 @@ function Result() {
     
 
     return (
-        <div>
-            <div> 당신의 mbti는 {mbti}입니다. </div>
+        <div className="result">
+            <div className="cont"> 
+                
+            </div>
         </div>
     )
 }
