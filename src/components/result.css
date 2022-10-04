@@ -1,33 +1,96 @@
-body {
-    overflow: scroll;
-}
-
 .result{
     background: linear-gradient(45deg, #483278 30%, #8061A8, #483278);
     color: white;
-    height: 230vh;
     width: 100vw;
     max-width:100%;
     margin: 0;
     padding-top: 85px;
+    padding-bottom: 50px;
 }
 
 .titleC {
-    width: 80%;
+    width: 100%;
     margin-bottom: 30px;
+    font-family: 'GangwonEdu_OTFBoldA';
+    font-size: 20px;
+    text-align: center;
+}
+
+.titleC > .name {
+    font-size: 40px;
+    font-family: 'GangwonEduPowerExtraBoldA';
+    margin-top: 14px;
 }
 
 .cont {
-    width: 80%;
-    height: 200vh;
+    width: 78%;
     background-color: rgba(255, 255, 255, 0.5);
     margin: auto;
     border-radius: 10px;
+    padding-top: 20px;
+    padding: 20px 24px;
+    text-align: center;
+    font-family: 'GangwonEdu_OTFBoldA';
+    color: #000;
 }
 
 .cont > .img {
     width: 264px;
     height: 264px;
     border: 1px solid white;
-    
+    margin: auto;
+}
+
+.cont > .phrase {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    color: #483278;
+
+}
+
+.cont > .quote {
+    text-align: left;
+    line-height: 24px;
+    border-left: 3px solid #483278;
+    padding: 5px 15px;
+}
+
+.cont > .char {
+    list-style: '💜';
+    padding-left: 20px;
+    width: 94%;
+
+}
+
+.cont > .char > li {
+    margin-bottom: 6px;
+    text-align: left;
+    padding-left: 8px;
+}
+
+.cont > .info {
+    width: 100%;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cont > .btn {
+    width: 198px;
+    height: 52px;
+    background-color: #483278;
+    color: white;
+    line-height: 56px;
+    font-size: 20px;
+    border-radius: 34px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+hr {
+    background-color: rgba(123, 115, 132, 0.4);
+    height: 2px;
+    border: 0;
 }

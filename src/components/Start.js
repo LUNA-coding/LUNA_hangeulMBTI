@@ -32,28 +32,31 @@ function Start() {
     
 
     return (
-        <div className='Start'>
-            <form>
-                <div className='titleCont'>
-                    <div className='title'>나와 닮은 위인은 <br /> 누구일까? </div>
-                    <div>한글편</div>
-                </div>
+        <div className='Root'>
+            <div className='Start'>
+                <form>
+                    <div className='titleCont'>
+                        <div className='title'>나와 닮은 위인은 <br /> 누구일까? </div>
+                        <div>한글편</div>
+                    </div>
 
-                <div className='deco'></div>
-                
-                <div className='btnCont'>
-                    <Link to='/test?id=0&res='>
-                        <button className="startBtn" type="submit">시작하기</button>
-                    </Link>
-                    <div className='join'>{count}명 참여</div>
-                    <div className='copy'>&copy;2022 LUNA. All rights reserved.</div>
-                </div>
-                
+                    <div className='deco'></div>
+                    
+                    <div className='btnCont'>
+                        <Link to='/test?id=0&res='>
+                            <button className="startBtn" type="submit">시작하기</button>
+                        </Link>
+                        <div className='join'>{count}명 참여</div>
+                        <div className='copy'>&copy;2022 LUNA. All rights reserved.</div>
+                    </div>
+                    
 
-                <img src={bg} alt="실패" className='img'/>
-                
-            </form>
+                    <img src={bg} alt="실패" className='bkimg'/>
+                    
+                </form>
+            </div>
         </div>
+        
     )
 }
 

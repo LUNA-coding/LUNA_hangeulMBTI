@@ -38,33 +38,36 @@ function Survey() {
     
     
     return (
-        <div className="Survey">
-            <div className='C'>
-                <div className='header'>
-                    <div className='title'>루나</div>
-                    <div className='m_title'>한글 엠비티아이</div>
-                </div>
-                <div className='question'>
-                    <div className='numbering'>질문 {questions[id].id + 1}.</div>
-                    <div className='content'>
-                        {questions[id].question.split('\n').map((line) => {
-                            return (
-                                <span>
-                                    {line}
-                                    <br />
-                                </span>
-                            )
-                        })}
+        <div className="Root">
+            <div className="Survey">
+                <div className='C'>
+                    <div className='header'>
+                        <div className='title'>루나</div>
+                        <div className='m_title'>한글 엠비티아이</div>
                     </div>
+                    <div className='question'>
+                        <div className='numbering'>질문 {questions[id].id + 1}.</div>
+                        <div className='content'>
+                            {questions[id].question.split('\n').map((line) => {
+                                return (
+                                    <span>
+                                        {line}
+                                        <br />
+                                    </span>
+                                )
+                            })}
+                        </div>
+                    </div>
+                    <div className="img_test"></div>
+                    <div className='ch'>
+                        <button onClick={next} value={questions[id].answers[0].type}>{questions[id].answers[0].content}</button>
+                        <button onClick={next} value={questions[id].answers[1].type}>{questions[id].answers[1].content}</button>
+                    </div>
+                    <Page />
                 </div>
-                <div className="img_test"></div>
-                <div className='ch'>
-                    <button onClick={next} value={questions[id].answers[0].type}>{questions[id].answers[0].content}</button>
-                    <button onClick={next} value={questions[id].answers[1].type}>{questions[id].answers[1].content}</button>
-                </div>
-                <Page />
             </div>
         </div>
+        
         
     )
 }

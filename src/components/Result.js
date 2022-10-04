@@ -40,7 +40,13 @@ function Result() {
         }
     }
 
-    console.log(data[index].mbti)
+    const infoList = () => {
+        const list = [];
+        for (let i = 0; i < data[index].content.charac.length; i++){
+            list.push(<li>{data[index].content.charac[i]}</li>);
+        }
+        return list;
+    }
 
     
 
@@ -48,10 +54,37 @@ function Result() {
         <div className="result">
             <div className="titleC">
                 <div>당신과 닮은 위인은</div>
-                <div>{data[index].name}</div>
+                <div className="name">{data[index].name}</div>
             </div>
             <div className="cont"> 
                 <div className="img"></div>
+                <div className="phrase">"{data[index].phrase}"</div>
+                <div className="quote">
+                    {data[index].content.quote.split('\n').map((line) => {
+                        return (
+                            <span>
+                                {line}
+                                <br />
+                            </span>
+                        )
+                    })}
+                </div>
+                <hr />
+                <ul className="char">{infoList()}</ul>
+                <hr />
+                <div className="info">
+                    {data[index].content.info.split('\n').map((line) => {
+                        return (
+                            <span>
+                                {line}
+                                <br />
+                            </span>
+                        )
+                    })}
+                </div>
+
+                <div className="btn">다시하기</div>
+                <div className="btn">링크복사</div>
             </div>
         </div>
     )

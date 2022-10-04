@@ -14,13 +14,17 @@
 
 body {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
     -webkit-user-select:none;
     -moz-user-select:none;
     -ms-user-select:none;
     user-select:none
+}
+
+.Root {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 
@@ -29,6 +33,7 @@ body {
     color: white;
     padding: 242px 0;
     height: 100vh;
+    overflow: hidden;
 }
 
 .titleCont {
@@ -93,7 +98,7 @@ body {
     margin-top: 20px;
 }
 
-.img {
+.bkimg {
     width: 100vw;
     position: absolute;
     bottom: 0;
