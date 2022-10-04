@@ -5,18 +5,30 @@ import bg from '../img/stbg.png';
 
 
 function Start() {
+
+    
+
     const [count, setCount] = useState(0);
 
     useEffect(() => {
+        let visitCount = localStorage.getItem('page_view');
+        visitCount = 1;
+        localStorage.setItem("page_view", 1);
+        visitCount = Number(visitCount) + 1;
+
+        localStorage.setItem("page_view", visitCount);
+
+
         let current = 0
         const counter = setInterval(() => {
-            current += 3
+            current += 1
             setCount(current)
-            if (current > 54) { // 나중에 실제 참여사용자 수로 대체
+            if (current > visitCount) { // 나중에 실제 참여사용자 수로 대체
                 clearInterval(counter);
             }
-        }, 50);
+        }, 500);
     }, [])
+
     
 
     return (

@@ -2,6 +2,7 @@
     {
         "mbti": "ENFP",
         "img": "link",
+        "name": "최세진",
         "phrase": "재능 넘치는 활동가, 최세진",
         "content" : {
             "quote": "“초성과 종성에 두루 쓰는 여덟 자 ‘ㄱ, ㄴ, ㄷ, ㄹ,ㅁ, ㅂ, ㅅ, ㅇ’의 이름을 ‘기역, 니은, 디귿, 리을, 미음, 비읍, 시옷, 이응’이라 한다.” \n<훈몽자회>, 최세진",
@@ -21,6 +22,7 @@
     {
         "mbti": "ENTP",
         "img": "link",
+        "name": "세조",
         "phrase": "한다면 하는 당찬 혁명가, 세조!",
         "content" : {
             "quote": "“경전에서 가려내어, 따로 한 책을 만들어, 이름 붙여 말하되 <석보상절>이라 하고… (중략) 또 훈민정음으로써 한문에 따라 번역하여 새기노니, 사람마다 쉽게 알아 삼보에 나아가 의지하게 되기를 바라노라.”\n<석보상절>, 세조",
@@ -40,6 +42,7 @@
     {
         "mbti": "ENTJ",
         "img": "link",
+        "name": "한용운",
         "phrase": "강단 있는 운동가, 한용운",
         "content" : {
             "quote": "“값없는 보배란 티끌에서 찾느니라 (중략) 두만강에 고히 씻어 백두산에 걸어 놓고 청천백일 엄숙한 빛에 쪼이고 다시 쪼여 반만년 살아오는 우리 겨레 보고 읽고 다시 써서 온 누리의 빛 지으리라”\n불교 87권",
@@ -57,8 +60,22 @@
         }
     },
     {
+        "mbti": "ENFJ",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
         "mbti": "ESFP",
         "img": "link",
+        "name": "홍랑",
         "phrase": "사랑과 이별을 노래한 시인, 홍랑",
         "content" : {
             "quote": "“묏버들 가려 꺾어 보내노라 임에게 주무시는 창 밖에 심어두고 보소서 밤비에 새 잎이 나거든 나인가 하고 여기소서”\n<묏버들 가려 꺾어>, 홍랑",
@@ -73,6 +90,175 @@
                 "계획없이 자유로히 떠나는 충동적인 여행을 즐긴다."
             ],
             "info": "홍랑은 조선 선조시기의 기생이자, 유명한 여성 시인입니다. 그녀의 대표작인, <묏버들 가려 꺾어>는 연인과의 이별에 대한 아픔을 절절하게 묘사한 한글시조입니다. 홍랑은 최초로 한글을 사용하여 시조를 쓴 여류시인입니다. "
+        }
+    },
+    {
+        "mbti": "ESTP",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "ESFJ",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "ESTP",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "ESFJ",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "ESTJ",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "INFP",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "INTP",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "INTJ",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "INFJ",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "ISFP",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "ISTP",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "ISFJ",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
+        }
+    },
+    {
+        "mbti": "ISTJ",
+        "img": "link",
+        "name": "",
+        "phrase": "",
+        "content" : {
+            "quote": "",
+            "charac": [
+                
+            ],
+            "info": ""
         }
     }
     

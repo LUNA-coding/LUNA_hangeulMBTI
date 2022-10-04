@@ -6,16 +6,28 @@ body {
     background: linear-gradient(45deg, #483278 30%, #8061A8, #483278);
     color: white;
     height: 230vh;
-    position: relative;
+    width: 100vw;
+    max-width:100%;
+    margin: 0;
+    padding-top: 85px;
+}
+
+.titleC {
+    width: 80%;
+    margin-bottom: 30px;
 }
 
 .cont {
-    width: 90%;
+    width: 80%;
     height: 200vh;
     background-color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    top: 2%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    margin: auto;
     border-radius: 10px;
+}
+
+.cont > .img {
+    width: 264px;
+    height: 264px;
+    border: 1px solid white;
+    
 }

@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import ReactGA from "react-ga";
 import Survey from "./components/Survey";
 import Start from "./components/Start";
 import Result from './components/Result';
-import ReactGA from "react-ga";
 
 
 function App() {

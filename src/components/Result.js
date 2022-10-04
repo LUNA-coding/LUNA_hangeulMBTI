@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import styles from './result.css'
+import data from '../common/result.json'
 
 function Result() {
     const location = useLocation();
@@ -28,21 +29,32 @@ function Result() {
     (tt >= 2) ? resTemp = resTemp + 'T' : resTemp = resTemp + 'F';
     (jj >= 2) ? resTemp = resTemp + 'J' : resTemp = resTemp + 'P';
     
-    const mbti = resTemp
-
-    console.log(mbti)
-        
+    const mbti = resTemp;
     
+    let index;
+
+    for(let i = 0; i < 16; i++){
+        if(data[i].mbti === mbti){
+            index = i;
+            break
+        }
+    }
+
+    console.log(data[index].mbti)
 
     
 
     return (
         <div className="result">
+            <div className="titleC">
+                <div>당신과 닮은 위인은</div>
+                <div>{data[index].name}</div>
+            </div>
             <div className="cont"> 
-                
+                <div className="img"></div>
             </div>
         </div>
     )
 }
 
-export default Result
+export default Result;
