@@ -4,22 +4,48 @@ import questions from '../common/Qlist.json';
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+function calResult(params) {
+    const resData = [...params.get('res')];
+
+    let ee = 0, nn = 0, tt = 0, jj = 0;
+
+    let resTemp = '';
+
+    
+    resData.forEach((item) => {
+        if (item === 'E'){
+            ee++;
+        }else if (item === 'N'){
+            nn++;
+        }else if (item === 'T'){
+            tt++;
+        }else if (item === 'J'){
+            jj++;
+        }
+    });
+
+    (ee >= 2) ? resTemp = 'E' : resTemp = 'I';
+    (nn >= 2) ? resTemp = resTemp + 'N' : resTemp = resTemp + 'S';
+    (tt >= 2) ? resTemp = resTemp + 'T' : resTemp = resTemp + 'F';
+    (jj >= 2) ? resTemp = resTemp + 'J' : resTemp = resTemp + 'P';
+    
+    const mbti = resTemp;
+    console.log(mbti)
+
+    return mbti;
+}
+
 function Survey() {
     
-    let [searchParams, setSearchParams] = useSearchParams();
+    const [searchParams, setSearchParams] = useSearchParams();
     const id = parseInt(searchParams.get('id'));
     const res = searchParams.get('res');
     const navigate = useNavigate();
-    
 
     useEffect(() => {
 
         if(res.length == 12){
-            navigate('/result', { 
-                state: { 
-                    result: res
-                } 
-            });
+            navigate(`/result?yourMBTIis=${calResult(searchParams)}`);
         };
     }, [res])
     
@@ -58,7 +84,9 @@ function Survey() {
                             })}
                         </div>
                     </div>
-                    <div className="img_test"></div>
+                    <div className="img_test">
+                        <img src={questions[id].imgSrc} alt="" />
+                    </div>
                     <div className='ch'>
                         <button onClick={next} value={questions[id].answers[0].type}>{questions[id].answers[0].content}</button>
                         <button onClick={next} value={questions[id].answers[1].type}>{questions[id].answers[1].content}</button>

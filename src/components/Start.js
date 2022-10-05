@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
 import styles from '../components/Start.css';
-import bg from '../img/stbg.png';
+
 
 
 function Start() {
@@ -51,7 +51,7 @@ function Start() {
                     </div>
                     
 
-                    <img src={bg} alt="실패" className='bkimg'/>
+                    <img src='/img/stbg.png' alt="실패" className='bkimg'/>
                     
                 </form>
             </div>

@@ -1,36 +1,13 @@
-import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useSearchParams } from "react-router-dom";
+import { Link, Route, BrowserRouter as Router } from 'react-router-dom';
 import styles from './result.css'
 import data from '../common/result.json'
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 function Result() {
     const location = useLocation();
-    const result = [...location.state.result];
-    
-    let ee = 0, nn = 0, tt = 0, jj = 0;
-
-    let resTemp = '';
-
-    
-    result.forEach((item) => {
-        if (item === 'E'){
-            ee++;
-        }else if (item === 'N'){
-            nn++;
-        }else if (item === 'T'){
-            tt++;
-        }else if (item === 'J'){
-            jj++;
-        }
-    });
-
-    (ee >= 2) ? resTemp = 'E' : resTemp = 'I';
-    (nn >= 2) ? resTemp = resTemp + 'N' : resTemp = resTemp + 'S';
-    (tt >= 2) ? resTemp = resTemp + 'T' : resTemp = resTemp + 'F';
-    (jj >= 2) ? resTemp = resTemp + 'J' : resTemp = resTemp + 'P';
-    
-    const mbti = resTemp;
-    
+    const [searchMbti, setSearchMbti] = useSearchParams();
+    const mbti = searchMbti.get('yourMBTIis');
     let index;
 
     for(let i = 0; i < 16; i++){
@@ -46,6 +23,12 @@ function Result() {
             list.push(<li>{data[index].content.charac[i]}</li>);
         }
         return list;
+    }
+
+    const url = window.location.href;
+
+    const popUp = () => {
+        alert('링크가 복사되었습니다.')
     }
 
     
@@ -83,8 +66,9 @@ function Result() {
                     })}
                 </div>
 
-                <div className="btn">다시하기</div>
-                <div className="btn">링크복사</div>
+                <Link to='/'><div className="btn">다시하기</div></Link>
+                <CopyToClipboard text={url}><div className="btn" onClick={popUp}>링크복사</div></CopyToClipboard>
+                
             </div>
         </div>
     )

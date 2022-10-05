@@ -2,6 +2,7 @@
     {
         "id" : 0,
         "option": "EI",
+        "imgSrc": "/img/qImg/1.jpg",
         "question": "두근두근 첫 등교날! \n처음보는 친구가 같이 학교를 가자고 한다면?",
         "answers": [
             {
@@ -17,6 +18,7 @@
     {
         "id" : 1,
         "option": "TF",
+        "imgSrc": "/img/qImg/2.jpg",
         "question": "교실에 가보니 \n선생님께서 칠판에 환영 인사를 써두셨다!",
         "answers": [
             {
@@ -32,7 +34,8 @@
     {
         "id" : 2,
         "option": "JP",
-        "question": "새학기엔 무엇을 할거냐는 선생님의 물음에",
+        "imgSrc": "/img/qImg/1.jpg",
+        "question": "본격적인 학기의 시작이다!\n새학기엔 무엇을 할거냐는 선생님의 물음에",
         "answers": [
             {
                 "type": "J",
@@ -47,7 +50,8 @@
     {
         "id" : 3,
         "option": "NS",
-        "question": "지루한 수업시간이다... 집중이 안되네.",
+        "imgSrc": "/img/qImg/1.jpg",
+        "question": "하루 중 가장 힘든 4교시다. \n 집중도 안되는데 바깥구경이나 할까?",
         "answers": [
             {
                 "type": "N",
@@ -62,7 +66,8 @@
     {
         "id" : 4,
         "option": "EI",
-        "question": "신나는 점심시간! 밥은 누구랑 먹지?",
+        "imgSrc": "/img/qImg/1.jpg",
+        "question": "드디어 신나는 점심시간이다! \n 그런데 밥은 누구랑 먹지?",
         "answers": [
             {
                 "type": "E",
@@ -77,6 +82,7 @@
     {
         "id" : 5,
         "option": "NS",
+        "imgSrc": "/img/qImg/1.jpg",
         "question": "밥을 먹고 있는데 \n옆으로 이상형인 선배가 지나간다..!",
         "answers": [
             {
@@ -92,7 +98,8 @@
     {
         "id" : 6,
         "option": "EI",
-        "question": "다음시간은 체육시간! 무엇을 할까?",
+        "imgSrc": "/img/qImg/1.jpg",
+        "question": "체육시간! 선생님이 자유시간을 주셨다. \n 무엇을 할까?",
         "answers": [
             {
                 "type": "E",
@@ -107,7 +114,8 @@
     {
         "id" : 7,
         "option": "TF",
-        "question": "친구가 날아오는 공에 머리를 세게 맞았다!",
+        "imgSrc": "/img/qImg/1.jpg",
+        "question": "친구가 날아오는 공에 머리를 세게 맞았다! \n 나의 반응은?",
         "answers": [
             {
                 "type": "F",
@@ -122,22 +130,24 @@
     {
         "id" : 8,
         "option": "JP",
-        "question": "다음은 국어시간이다!",
+        "imgSrc": "/img/qImg/1.jpg",
+        "question": "체육이 끝나고 분위기가 어수선하다. \n 시간표를 보니 다음은 국어 시간이다!",
         "answers": [
             {
                 "type": "J",
-                "content": "미리 책을 꺼내놔야겠다!"
+                "content": "얼른 물 떠 와서 책 꺼내놔야겠다!"
             },
             {
                 "type": "P",
-                "content": "이따 쌤이 필요하다고 하시면 꺼내지 뭐~"
+                "content": "아 더워!! 일단 선풍기부터 차지하자!"
             }
         ]
     },
     {
         "id" : 9,
         "option": "TF",
-        "question": "이번 수업 주제는 아름다운 우리말이다.",
+        "imgSrc": "/img/qImg/1.jpg",
+        "question": "국어 수업이 시작됐다. \n 이번 수업 주제는 아름다운 우리말이다.",
         "answers": [
             {
                 "type": "T",
@@ -152,22 +162,24 @@
     {
         "id" : 10,
         "option": "NS",
-        "question": "훈민정음을 보면 어떤 생각이 드는지 선생님께서 물어보신다.",
+        "imgSrc": "/img/qImg/1.jpg",
+        "question": "훈민정음에 대한 영상을 보고 \n 떠오르는 것을 말해보는 시간이다.",
         "answers": [
             {
                 "type": "S",
-                "content": "음. 과학적이고 예술적이지!"
+                "content": "음. 과학적이고 예술적이지! (감상을 말한다)"
             },
             {
                 "type": "N",
-                "content": "세종대왕, 애민정신, 중세국어! (냅다 던지기)"
+                "content": "세종대왕, 애민정신, 중세국어! (냅다 던진다)"
             }
         ]
     },
     {
         "id" : 11,
         "option": "JP",
-        "question": "선생님이 우리말의 우수성에 대한 조사를 숙제로 내주셨다.",
+        "imgSrc": "/img/qImg/1.jpg",
+        "question": "선생님이 내주신 오늘의 숙제는 \n '우리말의 우수성에 대한 조사하기'이다.",
         "answers": [
             {
                 "type": "J",

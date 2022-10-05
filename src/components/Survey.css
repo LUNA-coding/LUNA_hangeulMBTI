@@ -64,10 +64,9 @@
     white-space: pre-line;
 }
 
-.img_test {
+.img_test > img {
     width: 310px;
-    height: 210px;
-    border: 1px solid black;
+    height: 240px;
     margin: auto;
 }
 
@@ -91,7 +90,7 @@
 }
 
 .p_C {
-    margin-top: 60px;
+    margin-top: 50px;
     width: 100%;
 }
 

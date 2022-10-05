@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .result{
     background: linear-gradient(45deg, #483278 30%, #8061A8, #483278);
     color: white;
@@ -77,7 +81,7 @@
     margin-bottom: 30px;
 }
 
-.cont > .btn {
+.cont .btn {
     width: 198px;
     height: 52px;
     background-color: #483278;
