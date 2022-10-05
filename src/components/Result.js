@@ -53,6 +53,7 @@ function Result() {
                     })}
                 </div>
                 <hr />
+                <div className="char-header">'{data[index].name}'을(를) 닮은 당신은? </div>
                 <ul className="char">{infoList()}</ul>
                 <hr />
                 <div className="info">
@@ -66,10 +67,12 @@ function Result() {
                     })}
                 </div>
 
-                <Link to='/'><div className="btn">다시하기</div></Link>
-                <CopyToClipboard text={url}><div className="btn" onClick={popUp}>링크복사</div></CopyToClipboard>
+                <Link to='/'><div className="btn _1">다시하기</div></Link>
+                <CopyToClipboard text={url}><div className="btn _2" onClick={popUp}>링크복사</div></CopyToClipboard>
                 
             </div>
+
+            <div className="logo">세상을 여는 문, 루나</div>
         </div>
     )
 }

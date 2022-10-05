@@ -33,23 +33,15 @@
     padding: 0 38px;
 }
 
-.header  > .title {
-    font-size: 17px;
-    font-weight: bold;
-    font-family: 'SUIT-Medium';
-    margin-bottom: 10px;
-}
-
-.header > .m_title {
-    font-family: 'GangwonEdu_OTFBoldA';
-    margin-bottom: 34px;
+.header  {
+    height: 70px;
 }
 
 .question {
     width: 100%;
     text-align: left;
     margin: 0 auto;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
     width: 310px;
 }
 
@@ -95,11 +87,10 @@
     margin: 10px auto;
     line-height: 60px;
     display: block;
-    
 }
 
 .p_C {
-    margin-top: 50px;
+    margin-top: 80px;
     width: 100%;
 }
 

@@ -5,7 +5,6 @@ import { useSearchParams } from "react-router-dom";
 function Page() {
     let [searchParams, setSearchParams] = useSearchParams();
     const id = parseInt(searchParams.get('id'));
-    console.log(id)
     return (
         <div className="p_C">
             <div className="p_num">
