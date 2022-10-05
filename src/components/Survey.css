@@ -48,7 +48,9 @@
 .question {
     width: 100%;
     text-align: left;
+    margin: 0 auto;
     margin-bottom: 24px;
+    width: 310px;
 }
 
 .question > .numbering {
