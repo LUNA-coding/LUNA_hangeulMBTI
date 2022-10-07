@@ -46,7 +46,7 @@ function Start() {
                         <Link to='/test?id=0'>
                             <button className="startBtn" type="submit">시작하기</button>
                         </Link>
-                        <div className='join'>{count}명 참여</div>
+                        {/* <div className='join'>{count}명 참여</div> */}
                         <div className='copy'>&copy;이 테스트의 저작권은 2022 루나에게 있습니다.</div>
                     </div>
                     
