@@ -31,6 +31,8 @@ function Result() {
         alert('링크가 복사되었습니다.')
     }
 
+    console.log(data[index].img)
+
     
 
     return (
@@ -40,7 +42,7 @@ function Result() {
                 <div className="name">{data[index].name}</div>
             </div>
             <div className="cont"> 
-                <div className="img"></div>
+                <div className="img"><img src={data[index].img} alt="" /></div>
                 <div className="phrase">"{data[index].phrase}"</div>
                 <div className="quote">
                     {data[index].content.quote.split('\n').map((line) => {
@@ -66,6 +68,18 @@ function Result() {
                         )
                     })}
                 </div>
+                <hr />
+                <div className="promotion">
+                    <div className="pro-title">루나의 프로젝트, 한글을 세계로.</div>
+                    <div className="pro-cont">
+                        한국디지털미디어고등학교의 IT소셜벤처 동아리, 루나는 현재 <span>한글의 소중함</span>을 세상에 더욱 알리기 위한 프로젝트를 진행중입니다.
+                        나와 닮은 한글 위인 찾기 테스트를 재밌게 진행하셨다면, <span>저희 프로젝트에 참여하여 함께 한글을 알려보아요!</span>
+                    </div>
+                    <div className="pro-sub">루나의 프로젝트에 관심이 있다면?</div>
+                    <Link to="https://forms.gle/kdho4tcwtaxynHsT6"><div className="pro-btn">1분만 투자해서 응원해주기</div></Link>
+                </div>
+
+                <hr />
 
                 <Link to='/'><div className="btn _1">다시하기</div></Link>
                 <CopyToClipboard text={url}><div className="btn _2" onClick={popUp}>링크복사</div></CopyToClipboard>
