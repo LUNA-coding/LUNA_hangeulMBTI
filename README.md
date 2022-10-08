@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+# 내가 과거 인물이었다면..? <나와 닮은 위인 찾기 - 한글편-> | 한글 MBTI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+본 서비스는 창업동아리 루나의 2022년도 한글의 우수성 알리기 프로젝트 '아름다운 우리말, 한글'의 일환입니다.
 
-## Available Scripts
+## 서비스 설명
 
-In the project directory, you can run:
+몇가지 질문들로 나와 비슷한 성향의 한글을 지킨 위인을 찾아보는 미니 테스트입니다.  
+나와 닮은 위인이 이루어낸 업적을 재미있는 테스트로 살펴보며, 형식적인 역사 정보를 벗어나 선대와 후대의 마음을 잇는 특별한 경험을 선사할 것입니다.  
 
-### `npm start`
+<div align="center"><img size="75%" src="https://tumblbug-psi.imgix.net/4c608c29568ca587a43b7ad7276f846c7edbafa8/4a4f2946419dc1c954802b5a309e45b0ec021197/4f16703c471beadf07d6f812e04a468c2ad27f11/7bfb2eae-4a74-4b53-88ce-a368b26d75d8.png?ixlib=rb-1.1.0&w=1240&auto=format%2C%20compress&lossless=true&ch=save-data&s=1e07adcf609f3ef9956a08d96da025ff"></div><br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+선대의 노력으로 지켜져온 소중한 한글! 이제 한글은 우리의 손 위에 있습니다.  
+이 귀중한 유산을 전해준 나와 닮은 위인이 궁금하지 않으신가요? <나와 닮은 위인 찾기 -한글편->으로 함께 알아볼까요? 😊
