@@ -51,7 +51,7 @@ function Start() {
                     </div>
                     
 
-                    <img src='/img/stbg.png' alt="실패" className='bkimg'/>
+                    <img src='/img/bk_h.png' alt="" className='bkimg'/>
                     
                 </form>
             </div>

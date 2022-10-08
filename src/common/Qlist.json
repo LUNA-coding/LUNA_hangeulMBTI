@@ -66,7 +66,7 @@
     {
         "id" : 4,
         "option": "EI",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/5번.jpg",
         "question": "드디어 신나는 점심시간이다! \n 그런데 밥은 누구랑 먹지?",
         "answers": [
             {
@@ -82,7 +82,7 @@
     {
         "id" : 5,
         "option": "NS",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/6번.jpg",
         "question": "밥을 먹고 있는데 \n옆으로 이상형인 선배가 지나간다..!",
         "answers": [
             {
@@ -98,7 +98,7 @@
     {
         "id" : 6,
         "option": "EI",
-        "imgSrc": "/img/qImg/1번.jpg",
+        "imgSrc": "/img/qImg/7번.jpg",
         "question": "체육시간! 선생님이 자유시간을 주셨다. \n 무엇을 할까?",
         "answers": [
             {
@@ -114,7 +114,7 @@
     {
         "id" : 7,
         "option": "TF",
-        "imgSrc": "/img/qImg/2번.jpg",
+        "imgSrc": "/img/qImg/8번.jpg",
         "question": "친구가 날아오는 공에 머리를 세게 맞았다! \n 나의 반응은?",
         "answers": [
             {
@@ -130,7 +130,7 @@
     {
         "id" : 8,
         "option": "JP",
-        "imgSrc": "/img/qImg/3.jpg",
+        "imgSrc": "/img/qImg/9번.jpg",
         "question": "체육이 끝나고 분위기가 어수선하다. \n 시간표를 보니 다음은 국어 시간이다!",
         "answers": [
             {
@@ -146,7 +146,7 @@
     {
         "id" : 9,
         "option": "TF",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/10번.jpg",
         "question": "국어 수업이 시작됐다. \n 이번 수업 주제는 아름다운 우리말이다.",
         "answers": [
             {
@@ -162,7 +162,7 @@
     {
         "id" : 10,
         "option": "NS",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/11번.jpg",
         "question": "훈민정음에 대한 영상을 보고 \n 떠오르는 것을 말해보는 시간이다.",
         "answers": [
             {
@@ -178,7 +178,7 @@
     {
         "id" : 11,
         "option": "JP",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/12번.jpg",
         "question": "선생님이 내주신 오늘의 숙제는 \n '우리말의 우수성에 대한 조사하기'이다.",
         "answers": [
             {
