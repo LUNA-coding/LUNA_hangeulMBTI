@@ -76,7 +76,7 @@ function Result() {
                         나와 닮은 한글 위인 찾기 테스트를 재밌게 진행하셨다면, <span>저희 프로젝트에 참여하여 함께 한글을 알려보아요!</span>
                     </div>
                     <div className="pro-sub">루나의 프로젝트에 관심이 있다면?</div>
-                    <Link to="https://forms.gle/kdho4tcwtaxynHsT6"><div className="pro-btn">1분만 투자해서 응원해주기</div></Link>
+                    <a href="https://forms.gle/khj3oERSnrc98b399"><div className="btn pro">1분만 투자해서 응원해주기</div></a>
                 </div>
 
                 <hr />

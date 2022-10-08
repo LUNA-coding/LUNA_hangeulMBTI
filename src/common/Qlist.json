@@ -2,7 +2,7 @@
     {
         "id" : 0,
         "option": "EI",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/1번.jpg",
         "question": "두근두근 첫 등교날! \n처음보는 친구가 같이 학교를 가자고 한다면?",
         "answers": [
             {
@@ -18,7 +18,7 @@
     {
         "id" : 1,
         "option": "TF",
-        "imgSrc": "/img/qImg/2.jpg",
+        "imgSrc": "/img/qImg/2번.jpg",
         "question": "교실에 가보니 \n선생님께서 칠판에 환영 인사를 써두셨다!",
         "answers": [
             {
@@ -34,7 +34,7 @@
     {
         "id" : 2,
         "option": "JP",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/3번.jpg",
         "question": "본격적인 학기의 시작이다!\n새학기엔 무엇을 할거냐는 선생님의 물음에",
         "answers": [
             {
@@ -50,7 +50,7 @@
     {
         "id" : 3,
         "option": "NS",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/4번.jpg",
         "question": "하루 중 가장 힘든 4교시다. \n 집중도 안되는데 바깥구경이나 할까?",
         "answers": [
             {
@@ -98,7 +98,7 @@
     {
         "id" : 6,
         "option": "EI",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/1번.jpg",
         "question": "체육시간! 선생님이 자유시간을 주셨다. \n 무엇을 할까?",
         "answers": [
             {
@@ -114,7 +114,7 @@
     {
         "id" : 7,
         "option": "TF",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/2번.jpg",
         "question": "친구가 날아오는 공에 머리를 세게 맞았다! \n 나의 반응은?",
         "answers": [
             {
@@ -130,7 +130,7 @@
     {
         "id" : 8,
         "option": "JP",
-        "imgSrc": "/img/qImg/1.jpg",
+        "imgSrc": "/img/qImg/3.jpg",
         "question": "체육이 끝나고 분위기가 어수선하다. \n 시간표를 보니 다음은 국어 시간이다!",
         "answers": [
             {
