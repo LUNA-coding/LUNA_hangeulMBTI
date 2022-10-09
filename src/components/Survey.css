@@ -76,7 +76,6 @@
 
 .ch > button {
     width: 310px;
-    height: 60px;
     background-color: #483278;
     color: white;
     font-family: 'GangwonEdu_OTFBoldA';
@@ -84,7 +83,7 @@
     border-radius: 10px;
     font-size: 18px;
     margin: 10px auto;
-    line-height: 60px;
+    padding: 20px 0;
     display: block;
 }
 
