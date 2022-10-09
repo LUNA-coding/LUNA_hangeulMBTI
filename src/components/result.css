@@ -37,6 +37,12 @@ a{
     color: #000;
     margin-bottom: 10px;
 }
+@media screen and (min-width: 601px) {
+    .cont {
+        width: 550px;
+        box-sizing: border-box;
+    }
+}
 
 .cont > .img {
     width: 264px;
@@ -161,4 +167,51 @@ hr {
     padding: 16px;
     text-align: center;
     color: #8a8196;
+}
+
+.description {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    color: #483278;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    width: 80%;
+}
+
+.funding {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.phoneForm {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.phoneNum {
+    padding: 14px 12px;
+    outline: none;
+    border: none;
+    background: #fff;
+    width: 85%;
+    box-sizing: border-box;
+}
+.phoneSub {
+    width: 15%;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
 }
