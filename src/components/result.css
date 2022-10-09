@@ -1,12 +1,12 @@
-a{
+a {
     text-decoration: none;
 }
 
-.result{
-    background: linear-gradient(45deg, #483278 30%, #8061A8, #483278);
+.result {
+    background: linear-gradient(45deg, #483278 30%, #8061a8, #483278);
     color: white;
     width: 100vw;
-    max-width:100%;
+    max-width: 100%;
     margin: 0;
     padding-top: 85px;
     padding-bottom: 25px;
@@ -61,7 +61,6 @@ a{
     margin-top: 20px;
     margin-bottom: 32px;
     color: #483278;
-
 }
 
 .cont > .quote {
@@ -82,7 +81,6 @@ a{
     list-style: circle;
     padding-left: 20px;
     width: 94%;
-
 }
 
 .cont > .char > li {
@@ -109,7 +107,7 @@ a{
     border-radius: 34px;
     margin: auto;
     margin-top: 30px;
-    text-shadow: -1px 0px #9068E5, 0px 1px #9068E5, 1px 0px #9068E5, 0px -1px #9068E5; 
+    text-shadow: -1px 0px #9068e5, 0px 1px #9068e5, 1px 0px #9068e5, 0px -1px #9068e5;
     box-shadow: 0 0 3px #483278;
 }
 
@@ -130,7 +128,6 @@ hr {
 
 .promotion {
     text-align: left;
-
 }
 
 .pro-title {
@@ -143,7 +140,7 @@ hr {
     line-height: 30px;
     background-color: #8a8196;
     padding: 20px;
-    color: #DDD;
+    color: #ddd;
     border-radius: 10px;
 }
 
@@ -153,13 +150,11 @@ hr {
 
 .pro-sub {
     margin: 20px 0;
-    
 }
 
 .pro.btn {
     font-size: 16px;
     text-align: center;
-    
 }
 
 .logo {

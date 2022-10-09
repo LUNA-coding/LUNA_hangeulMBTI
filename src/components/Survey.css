@@ -19,13 +19,12 @@
     font-style: normal;
 }
 
-.Survey{
+.Survey {
     margin: 0;
     padding: 56px 0;
     background-color: white;
     height: 90vh;
     width: 100vw;
-    
 }
 
 .C {
@@ -33,7 +32,7 @@
     padding: 0 38px;
 }
 
-.header  {
+.header {
     height: 70px;
 }
 
@@ -101,10 +100,9 @@
     text-align: right;
     width: 285px;
     margin: 0 auto 9px;
-    
 }
 
-.page{
+.page {
     list-style: none;
     display: flex;
     color: #ededed;
@@ -113,15 +111,12 @@
     margin: 4px auto;
 }
 
-
-
 .selected {
     color: #483278;
     font-size: 18;
     font-weight: bold;
     font-family: 'GangwonEduPowerExtraBoldA';
     margin: 0 5px;
-    
 }
 
 .unselected {
@@ -132,5 +127,3 @@
     margin: 0 7px;
     color: rgba(255, 255, 255, 0);
 }
-
-
