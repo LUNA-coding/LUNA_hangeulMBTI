@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './result.css'
 import data from '../common/result.json'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import ReactGA from "react-ga";
 
 function Result() {
     const [searchMbti] = useSearchParams();
@@ -48,11 +49,23 @@ function Result() {
         .then(data => {
             if (data.phoneNum === phone) {
                 alert('전화번호가 저장되었습니다.');
+
+                ReactGA.event({
+                    category: "버튼 클릭",
+                    action: "펀딩 알림용 전화번호 등록",
+                });
             } else {
                 alert('서버에 에러가 발생하였습니다.');
             }
         });
     }
+
+
+    ReactGA.event({
+        category: "페이지 이동",
+        action: "위인 결과 페이지",
+        label: data[index].name
+    });
 
     return (
         <div className="result">

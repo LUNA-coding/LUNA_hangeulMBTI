@@ -4,6 +4,7 @@ import { useSearchParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { mbtiState } from '../state/mbti';
+import ReactGA from "react-ga";
 
 import './Survey.css';
 
@@ -61,6 +62,12 @@ function Survey() {
             setMbti([...mbti, e.target.value]);
         }
     };
+
+    ReactGA.event({
+        category: "페이지 이동",
+        action: "설문조사 페이지",
+        label: id
+    });
 
     return (
         <div className="Root">
