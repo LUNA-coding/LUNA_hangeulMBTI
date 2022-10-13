@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useSearchParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import './result.css'
@@ -8,7 +7,6 @@ import ReactGA from "react-ga";
 
 function Result() {
     const [searchMbti] = useSearchParams();
-    const [phone, setPhone] = useState('');
     const mbti = searchMbti.get('yourMBTIis');
     let index;
 
@@ -34,32 +32,6 @@ function Result() {
     }
 
     console.log(data[index].img)
-
-    const phoneNumSubmit = () => {
-        if (!phone) return alert('전화번호를 입력해주세요.');
-        fetch('https://api.mbti.hangeul.luna.codes/', {
-            method: 'post',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                phoneNum: phone
-            }),
-        }).then(res => res.json())
-        .then(data => {
-            if (data.phoneNum === phone) {
-                alert('전화번호가 저장되었습니다.');
-
-                ReactGA.event({
-                    category: "버튼 클릭",
-                    action: "펀딩 알림용 전화번호 등록",
-                });
-            } else {
-                alert('서버에 에러가 발생하였습니다.');
-            }
-        });
-    }
-
 
     ReactGA.event({
         category: "페이지 이동",
@@ -105,13 +77,7 @@ function Result() {
                     </div>
                     <div className="pro-sub">루나의 프로젝트에 관심이 있다면?</div>
                     <div className="funding">
-                        <div className="description">펀딩 시작시 메세지 받기</div>
-                        <div className="phoneForm">
-                            <input className="phoneNum" placeholder='전화번호를 입력해주세요(숫자만)' onChange={({ target: { value } }) => setPhone(value)} />
-                            <div className="phoneSub" style={{
-                                background: phone ? '#483278' : '#969696'
-                            }} onClick={phoneNumSubmit}>확인</div>
-                        </div>
+                        <div className="btn" onClick={() => window.open('https://tumblbug.com/luna_hangeul_2022', '_blank')}>펀딩하러 가기</div>
                     </div>
                 </div>
 
