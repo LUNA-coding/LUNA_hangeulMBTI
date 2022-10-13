@@ -77,7 +77,14 @@ function Result() {
                     </div>
                     <div className="pro-sub">루나의 프로젝트에 관심이 있다면?</div>
                     <div className="funding">
-                        <div className="btn" onClick={() => window.open('https://tumblbug.com/luna_hangeul_2022', '_blank')}>펀딩하러 가기</div>
+                        <div className="btn" onClick={() => {
+                            ReactGA.event({
+                                category: "버튼 클릭",
+                                action: "펀딩 사이트 이동",
+                            });                            
+
+                            window.open('https://tumblbug.com/luna_hangeul_2022', '_blank')
+                        }}>펀딩하러 가기</div>
                     </div>
                 </div>
 
